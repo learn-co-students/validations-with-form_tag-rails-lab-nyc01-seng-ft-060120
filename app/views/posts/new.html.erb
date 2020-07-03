@@ -1,0 +1,19 @@
+<h2>Create an Author</h2>
+<%= form_tag posts_path, method: "post" do %>
+    <% if @post.errors.any? %>
+        <% @post.errors.full_messages.each do |message| %>
+            <%= message %>
+        <% end %>
+    <% end %>
+
+    <%= label_tag "title", "Name" %>
+    <%= text_field_tag "title", @post.title %>
+
+    <%= label_tag "category", "Email" %>
+    <%= text_field_tag "category", @post.category %>
+
+    <%= label_tag "content", "Phone Number" %>  
+    <%= text_field_tag "content", @post.content %>
+
+    <%= submit_tag "Create" %>
+<% end %>
