@@ -9,6 +9,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails-controller-testing'
 gem 'bootsnap'
+gem 'faker'
+gem 'better_errors'
 
 group :development, :test do
   gem 'pry'
@@ -16,4 +18,5 @@ group :development, :test do
 end
 
 group :development do
+  gem 'solargraph'
 end
